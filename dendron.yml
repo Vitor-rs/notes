@@ -1,0 +1,28 @@
+workspace:
+  vaults:
+    - fsPath: .
+      name: pkm-main
+  journal:
+    dailyDomain: daily.journal
+    name: journal
+    dateFormat: y.MM.dd
+    addBehavior: childOfDomain
+    firstDayOfWeek: 1
+  scratch:
+    name: scratch
+    dateFormat: y.MM.dd.HHmmss
+    addBehavior: asOwnDomain
+  graph:
+    zoomSpeed: 1
+    createStub: false
+  lookupConfirmVaultOnCreate: true
+  enableAutoCreateOnDefinition: true
+  enableXVaultWikiLink: false
+  workspaceVaultSyncMode: sync
+  enableAutoFoldFrontmatter: true
+  maxPreviewsCached: 10
+  maxNoteLength: 204800
+  enableUserTags: true
+  enableHashTags: true
+  enableLinkCandidates: true
+  enablePrettifyPasteDatetime: true
