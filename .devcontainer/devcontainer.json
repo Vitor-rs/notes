@@ -1,0 +1,10 @@
+{
+  "name": "Dendron Workspace",
+  "extensions": [
+    "dendron.dendron"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "echo 'Container created. Dendron is ready!'"
+}
