@@ -1,0 +1,79 @@
+version: 1
+imports: []
+schemas:
+  # Schema para o método PARA (Projects, Areas, Resources, Archives)
+  - id: para
+    title: PARA
+    desc: Estrutura principal baseada no método PARA de Tiago Forte
+    parent: root
+    namespace: true
+    children:
+      - pattern: projects
+        title: Projects
+        desc: Projetos ativos com data de início e fim definidas
+        namespace: true
+      - pattern: areas
+        title: Areas
+        desc: Áreas de responsabilidade contínuas
+        namespace: true
+      - pattern: resources
+        title: Resources
+        desc: Recursos e tópicos de interesse
+        namespace: true
+      - pattern: archives
+        title: Archives
+        desc: Projetos concluídos e informações arquivadas
+        namespace: true
+
+  # Schema para o método CODE (Capture, Organize, Distill, Express)
+  - id: code
+    title: CODE
+    desc: Fluxo de trabalho baseado no método CODE de Tiago Forte
+    parent: root
+    namespace: true
+    children:
+      - pattern: capture
+        title: Capture
+        desc: Notas e ideias capturadas
+        namespace: true
+      - pattern: organize
+        title: Organize
+        desc: Notas organizadas por tema ou projeto
+        namespace: true
+      - pattern: distill
+        title: Distill
+        desc: Notas processadas e destiladas em conhecimento utilizável
+        namespace: true
+      - pattern: express
+        title: Express
+        desc: Conhecimento transformado em expressão ou ação
+        namespace: true
+
+  # Schema para o método Zettelkasten
+  - id: zettel
+    title: Zettelkasten
+    desc: Notas atômicas interconectadas no estilo Zettelkasten
+    parent: root
+    namespace: true
+    children:
+      - pattern: fleeting
+        title: Fleeting Notes
+        desc: Notas rápidas e temporárias
+      - pattern: literature
+        title: Literature Notes
+        desc: Notas baseadas em leituras
+      - pattern: permanent
+        title: Permanent Notes
+        desc: Notas refinadas e permanentes
+      - pattern: structure
+        title: Structure Notes
+        desc: Notas de estrutura que conectam conceitos
+
+  # Schema para notas diárias
+  - id: daily
+    title: Daily Notes
+    desc: Notas diárias para registro de pensamentos e tarefas
+    parent: root
+    namespace: true
+    pattern: journal
+    template: templates.daily

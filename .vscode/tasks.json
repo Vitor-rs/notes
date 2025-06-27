@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "PKM - Sync and Process Notes",
+			"type": "shell",
+			"command": "echo 'Iniciando sincronização e processamento de notas PKM...' && git add . && git commit -m 'Auto-sync PKM notes - $(date)' && echo 'Sincronização concluída!'",
+			"group": "build",
+			"isBackground": false,
+			"args": [],
+			"problemMatcher": []
+		}
+	]
+}
